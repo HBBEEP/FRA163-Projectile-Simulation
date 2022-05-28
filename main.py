@@ -262,6 +262,7 @@ error_bool_1 = BoolCheck()
 error_bool_2 = BoolCheck()
 error_bool_3 = BoolCheck()
 error_bool_4 = BoolCheck()
+
 # >---------------------------------------------------------------------------------------------------------------------
 while run:
     if start_bool.my_bool_return():
@@ -297,9 +298,10 @@ while run:
         # Button
         save_button.draw()
         clear_test.draw()
-        play_test.draw()
+
         member_button.draw()
         home_button.draw()
+        play_test.draw()
 
         screen.blit(save_surface, save_rect)
         screen.blit(clear_surface, clear_rect)
@@ -312,7 +314,6 @@ while run:
             save_bool.my_change_bool(True)
         try:
             if save_bool.my_bool_return():
-
                 my_cal = MyCalculate(float(input_boxes[0].text), float(input_boxes[1].text),
                                         float(input_boxes[2].text), float(input_boxes[3].text))
 
@@ -358,7 +359,7 @@ while run:
                     save_bool.my_change_bool(False)
                     user_input_bool.my_change_bool(True)
 
-                    with open('my_simulation_history.csv', 'a') as f:
+                    with open('data.csv', 'a') as f:
                         writer = csv.writer(f)
                         fields = [' ',float(input_boxes[0].text), float(input_boxes[1].text),
                                             float(input_boxes[2].text), float(input_boxes[3].text),'', time1, velocity, maximum_height]
@@ -366,6 +367,7 @@ while run:
 
         except:
             test_error.draw()
+
 
         if error_bool_1.my_bool_return():
             ball_mass_error_button.draw()
