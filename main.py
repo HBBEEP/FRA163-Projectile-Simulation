@@ -37,10 +37,10 @@ moon_surface = pygame.image.load("icon/moon.png").convert_alpha()
 moon_rect = moon_surface.get_rect(midbottom = (58, 78))
 
 save_surface = pygame.image.load("icon/save.png").convert_alpha()
-save_rect = save_surface.get_rect(midbottom = (960, 580))
+save_rect = save_surface.get_rect(midbottom = (960, 585))
 
 clear_surface = pygame.image.load("icon/clear.png").convert_alpha()
-clear_rect = clear_surface.get_rect(midbottom = (1070, 580))
+clear_rect = clear_surface.get_rect(midbottom = (1065, 585))
 
 play_surface = pygame.image.load("icon/play.png").convert_alpha()
 play_rect = play_surface.get_rect(midbottom = (1167, 585))
@@ -89,7 +89,7 @@ class Button:
 
         mouse_pos = pygame.mouse.get_pos()
         if self.top_rect.collidepoint(mouse_pos):
-            # self.top_color = '#D74B4B'
+
             self.my_color_1 = '#CDDA8F'
             if pygame.mouse.get_pressed()[0] == 1 and self.pressed == False:
                 self.my_color_1 = '#CDDA8F'
