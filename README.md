@@ -2,7 +2,7 @@
 
 ### description
 - Simulation Program for displaying projectile paths by assigning mass, angle, spring pull lenghed and spring constant
-- This program provides for Squash Laucher of FRAB8 Group 2
+- This program provides for supporting the calculation of Squash Laucher of FRAB8 Group 2
 
 ### member
 - Kullakant Kaewkallaya
