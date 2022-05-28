@@ -1,8 +1,8 @@
 # FRA163-Projectile-Simulation
 
 ### description
-- Simulation Program for displaying projectile path by assign mass, angle, spring pull lenghed and spring constant
-- This program can only use for Squash Laucher of FRAB8 Group 2
+- Simulation Program for displaying projectile paths by assigning mass, angle, spring pull lenghed and spring constant
+- This program provides for Squash Laucher of FRAB8 Group 2
 
 ### member
 - Kullakant Kaewkallaya
